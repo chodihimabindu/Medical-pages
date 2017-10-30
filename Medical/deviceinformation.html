@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#bannerimage {
+  width: 100%;
+
+  height: 205px;
+  background-color:	 ;
+  background-position: center;
+  text-align: center;
+}
+body {
+    background-image: url("images/astama6.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 1400px 650px;
+    background-repeat: no-repeat;
+  //  overflow:hidden;
+}
+.headtext{
+        color:rgb(0, 153, 255);
+         font-family: "Times New Roman";
+         font-size: 20px;
+
+}
+
+.semi-transparent-button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px;
+  width: 80%;
+  max-width: 120px;
+  background: #fff; /* fallback color for old browsers */background: rgba(43, 230, 223, 0.5);;
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+}
+
+div.transbox {
+  margin: 5px;
+  background-color: #ffffff;
+  border: 0px solid white;
+   width: 1350px;
+   height: 30px;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  box-align:center
+}
+
+div.transbox p {
+  margin: 0%;
+  font-weight: bold;
+  text-align: center;
+  color: rgba(226, 11, 99, 0.91);
+  font-size: 22px;
+}
+
+.searchtext{
+        color:rgb(44, 195, 148);
+         font-family: "Times New Roman";
+         font-size: 20px;
+
+}
+
+#search {
+    float: right;
+    margin-top: 9px;
+    width: 250px;
+}
+
+.search {
+    padding: 5px 0;
+    width: 230px;
+    height: 28px;
+    position: relative;
+    left: 500px;
+    float: left;
+    line-height: 22px;
+    align-items: center;
+}
+
+    .search input {
+        position: absolute;
+        width: 0px;
+        float: Left;
+        margin-left: 210px;
+        -webkit-transition: all 0.7s ease-in-out;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out;
+        height: 24px;
+        line-height: 18px;
+        padding: 0 2px 0 2px;
+        border-radius:1px;
+        align-items: center;
+    }
+
+        .search:hover input, .search input:focus {
+            width: 200px;
+            margin-left: 0px;
+        }
+
+.btn {
+    height: 30px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    border-radius:1px;
+    background-color:
+}
+
+
+</style>
+</head>
+<body>
+<center>
+<div id="bannerimag" class="headtext">
+  <h1>Diagnosis Information</h1>
+</div>
+</center>
+</br>
+<div class="transbox">
+    <p>Online Mode</p>
+</div>
+</br>
+
+<div>
+  <form>
+	<div class="searchtext">
+		<center><h3>Enter Number to get Info</h3></center>
+
+        <div class="search">
+<input type="text" class="form-control input-sm" maxlength="64" placeholder="Enter Number" />
+ <button type="submit" class="btn btn-primary btn-sm">Search</button>
+</div>
+	</div>
+</form>
+</div>
+
+<center>
+<div>
+</br>
+</br>
+  <h2>Device Information</h2><br>
+		<div class="deviceName">Name:</div><br>
+		<div class="deviceId">ID:</div><br>
+		<div class="used">How Many Times Used:</div><br>
+</div>
+</center>
+
+</body>
+</html>

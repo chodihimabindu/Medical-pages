@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="css/static.min.css" rel="stylesheet"/>
+    <link href="demo.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+	<meta http-equiv="refresh" content="10;url=deviceinformation.html" />
+    <title>jQuery</title>
+</head>
+<style>
+
+body {
+    background-image: url("images/progressimage.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 1500px 650px;
+    background-repeat: no-repeat;
+  //  overflow:hidden;
+
+}
+.progressba{
+			margin-left: 70px;
+			margin-top:150px;
+		}
+
+		.progresstext{
+			margin-left:50px;
+			margin-top:10px;
+			color:white;
+			font-size:25px;
+		}
+
+</style>
+<body>
+  <center>
+
+    <div class="progressbar">
+    </br>
+  </br>
+</br>
+    				<center>	<p class="progresstext"> Please  Wait...........</p>
+    					<p class="progresstext"> Your Request is Processing......</p><br/></center>
+    </div>
+<div class="container ">
+
+    <div class="loading-progress " role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="50" style="width:50%; align:center ">
+    </div>
+</div>
+<div>
+<h3 style="text-align:center"><p class="progresstext">connecting...</p></h3>
+
+</div>
+</center>
+<script src="js/static.min.js"></script>
+<script src="../dist/js/jquery.progresstimer.js"></script>
+<script>
+    var progress = $(".loading-progress").progressTimer({
+        timeLimit: 8,
+        onFinish: function () {
+            alert('completed!');
+        }
+    });
+    $.ajax({
+       url:"http://localhost/"
+    }).done(function(){
+        progress.progressTimer('complete');
+    });
+</script>
+</body>
+</html>
